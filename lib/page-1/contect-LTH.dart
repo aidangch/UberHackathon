@@ -1,9 +1,8 @@
-// Import necessary packages and libraries
-import 'package:flutter/material.dart'; // Import Flutter's Material package.
-import 'package:flutter/gestures.dart'; // Import gesture-related features from Flutter.
-import 'dart:ui'; // Import dart:ui for access to Flutter's drawing and painting features.
-import 'package:google_fonts/google_fonts.dart'; // Import Google Fonts package.
-import 'package:myapp/utils.dart'; // Import a custom utility package (not provided in this code).
+import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
+import 'dart:ui';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:myapp/utils.dart';
 
 // Define a Flutter StatelessWidget named 'Scene'.
 class Scene extends StatelessWidget {
