@@ -1,78 +1,105 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:myapp/utils.dart';
+// Import necessary packages and libraries
+import 'package:flutter/material.dart'; // Import Flutter's Material package.
+import 'package:flutter/gestures.dart'; // Import gesture-related features from Flutter.
+import 'dart:ui'; // Import dart:ui for access to Flutter's drawing and painting features.
+import 'package:google_fonts/google_fonts.dart'; // Import Google Fonts package.
+import 'package:myapp/utils.dart'; // Import a custom utility package (not provided in this code).
 
+// Define a Flutter StatelessWidget named 'Scene'.
 class Scene extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // Define a base width for layout calculations.
     double baseWidth = 375;
+
+    // Calculate the factor by which the layout should scale based on the screen width.
     double fem = MediaQuery.of(context).size.width / baseWidth;
+
+    // Calculate a slightly adjusted factor for font sizing.
     double ffem = fem * 0.97;
+
+    // Return a Container widget that fills the entire available width.
     return Container(
       width: double.infinity,
       child: Container(
-        // contectgYF (103:349)
-        padding: EdgeInsets.fromLTRB(78*fem, 535*fem, 74.8*fem, 213*fem),
+        // Set padding for the inner container.
+        padding:
+            EdgeInsets.fromLTRB(78 * fem, 535 * fem, 74.8 * fem, 213 * fem),
+
+        // Set the width and height of the inner container.
         width: double.infinity,
-        height: 812*fem,
-        decoration: BoxDecoration (
-          color: Color(0xff000000),
-          borderRadius: BorderRadius.only (
-            topLeft: Radius.circular(16*fem),
-            topRight: Radius.circular(16*fem),
+        height: 812 *
+            fem, // Height is determined by the screen height and 'fem' factor.
+
+        // Apply styling to the inner container.
+        decoration: BoxDecoration(
+          color: Color(0xff000000), // Set the background color to black.
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(
+                16 * fem), // Apply rounded corners to the top-left.
+            topRight: Radius.circular(
+                16 * fem), // Apply rounded corners to the top-right.
           ),
           boxShadow: [
+            // Add a shadow to the container.
             BoxShadow(
-              color: Color(0x192f2f2f),
-              offset: Offset(-10*fem, 4*fem),
-              blurRadius: 10*fem,
+              color: Color(0x192f2f2f), // Set shadow color with transparency.
+              offset: Offset(-10 * fem, 4 * fem), // Set shadow offset.
+              blurRadius: 10 * fem, // Set shadow blur radius.
             ),
           ],
         ),
         child: Container(
-          // group33288XHy (114:27)
+          // Define a group within the inner container.
           width: double.infinity,
           height: double.infinity,
-          decoration: BoxDecoration (
-            borderRadius: BorderRadius.circular(8*fem),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(
+                8 * fem), // Apply rounded corners to the group.
           ),
           child: Stack(
             children: [
               Positioned(
-                // rectangle923FDy (114:28)
-                left: 0*fem,
-                top: 0*fem,
+                // Define a rectangle within the group.
+                left: 0 * fem,
+                top: 0 * fem,
                 child: Align(
                   child: SizedBox(
-                    width: 222*fem,
-                    height: 64*fem,
+                    width: 222 * fem,
+                    height: 64 * fem,
                     child: Container(
-                      decoration: BoxDecoration (
-                        borderRadius: BorderRadius.circular(8*fem),
-                        color: Color(0x49b6b6b6),
+                      // Apply styling to the rectangle.
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                            8 * fem), // Apply rounded corners to the rectangle.
+                        color: Color(
+                            0x49b6b6b6), // Set the rectangle's color with transparency.
                       ),
                     ),
                   ),
                 ),
               ),
               Positioned(
-                // selectLmD (114:29)
-                left: 67*fem,
-                top: 22*fem,
+                // Define a selectable text within the group.
+                left: 67 * fem,
+                top: 22 * fem,
                 child: Align(
                   child: SizedBox(
-                    width: 94*fem,
-                    height: 18*fem,
+                    width: 94 * fem,
+                    height: 18 * fem,
                     child: Text(
-                      'Select',
-                      style: SafeGoogleFont (
-                        'DM Sans',
-                        fontSize: 30*ffem,
-                        fontWeight: FontWeight.w700,
-                        height: 0.6*ffem/fem,
-                        color: Color(0xfffff9f9),
+                      'Select', // Display the text 'Select'.
+                      style: SafeGoogleFont(
+                        'DM Sans', // Use the 'DM Sans' font family.
+                        fontSize:
+                            30 * ffem, // Set the font size based on 'ffem'.
+                        fontWeight:
+                            FontWeight.w700, // Set the font weight to 'w700'.
+                        height: 0.6 *
+                            ffem /
+                            fem, // Set the line height based on 'ffem' and 'fem'.
+                        color: Color(
+                            0xfffff9f9), // Set the text color to white with transparency.
                       ),
                     ),
                   ),
@@ -82,6 +109,6 @@ class Scene extends StatelessWidget {
           ),
         ),
       ),
-          );
+    );
   }
 }
