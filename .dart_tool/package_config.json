@@ -242,7 +242,11 @@
       "languageVersion": "2.18"
     }
   ],
+<<<<<<< HEAD
+  "generated": "2023-09-20T04:03:11.100303Z",
+=======
   "generated": "2023-09-19T06:19:40.181937Z",
+>>>>>>> parent of ef1bb47 (google maps api)
   "generator": "pub",
   "generatorVersion": "2.18.6"
 }

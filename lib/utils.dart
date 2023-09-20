@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
+// Custom scroll behavior class that allows dragging with touch and mouse
 class MyCustomScrollBehavior extends MaterialScrollBehavior {
   @override
   Set<PointerDeviceKind> get dragDevices => {
@@ -10,6 +11,7 @@ class MyCustomScrollBehavior extends MaterialScrollBehavior {
       };
 }
 
+// Function for safely applying Google Fonts
 TextStyle SafeGoogleFont(
   String fontFamily, {
   TextStyle? textStyle,
@@ -33,6 +35,7 @@ TextStyle SafeGoogleFont(
   double? decorationThickness,
 }) {
   try {
+    // Try to get the specified Google Font, if available
     return GoogleFonts.getFont(
       fontFamily,
       textStyle: textStyle,
@@ -56,8 +59,9 @@ TextStyle SafeGoogleFont(
       decorationThickness: decorationThickness,
     );
   } catch (ex) {
+    // If the specified Google Font is not available, fall back to a default font
     return GoogleFonts.getFont(
-      "Source Sans Pro",
+      "Source Sans Pro", // Default font (you can change this)
       textStyle: textStyle,
       color: color,
       backgroundColor: backgroundColor,
