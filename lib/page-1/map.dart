@@ -1,12 +1,14 @@
 // Import necessary packages and libraries
 import 'package:flutter/material.dart'; // Import Flutter's Material package.
-import 'package:flutter/gestures.dart'; // Import gesture-related features from Flutter.
-import 'dart:ui'; // Import dart:ui for access to Flutter's drawing and painting features.
-import 'package:google_fonts/google_fonts.dart'; // Import Google Fonts package.
+// Import gesture-related features from Flutter.
+// Import dart:ui for access to Flutter's drawing and painting features.
+// Import Google Fonts package.
 import 'package:myapp/utils.dart'; // Import a custom utility package (not provided in this code).
 
 // Define a Flutter StatelessWidget named 'Scene'.
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     // Define a base width for layout calculations.
@@ -19,13 +21,13 @@ class Scene extends StatelessWidget {
     double ffem = fem * 0.97;
 
     // Return a Container widget that fills the entire available width.
-    return Container(
+    return SizedBox(
       width: double.infinity,
-      child: Container(
+      child: SizedBox(
         // Set the width to fill the available width and the height to a specific value based on 'fem'.
         width: double.infinity,
         height: 598 * fem,
-        child: Container(
+        child: SizedBox(
           // groupcET (2:246)
           width: double.infinity,
           height: double.infinity,
@@ -145,7 +147,7 @@ class Scene extends StatelessWidget {
                         fontSize: 8.0749998093 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff606161),
+                        color: const Color(0xff606161),
                       ),
                     ),
                   ),
@@ -166,7 +168,7 @@ class Scene extends StatelessWidget {
                         fontSize: 8.0749998093 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff606161),
+                        color: const Color(0xff606161),
                       ),
                     ),
                   ),
@@ -187,7 +189,7 @@ class Scene extends StatelessWidget {
                         fontSize: 8.0749998093 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff606161),
+                        color: const Color(0xff606161),
                       ),
                     ),
                   ),
@@ -208,7 +210,7 @@ class Scene extends StatelessWidget {
                         fontSize: 5 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff818181),
+                        color: const Color(0xff818181),
                       ),
                     ),
                   ),
@@ -229,7 +231,7 @@ class Scene extends StatelessWidget {
                         fontSize: 5 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff818181),
+                        color: const Color(0xff818181),
                       ),
                     ),
                   ),
@@ -250,7 +252,7 @@ class Scene extends StatelessWidget {
                         fontSize: 5 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff818181),
+                        color: const Color(0xff818181),
                       ),
                     ),
                   ),
@@ -271,7 +273,7 @@ class Scene extends StatelessWidget {
                         fontSize: 5 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff818181),
+                        color: const Color(0xff818181),
                       ),
                     ),
                   ),
@@ -292,7 +294,7 @@ class Scene extends StatelessWidget {
                         fontSize: 5 * ffem,
                         fontWeight: FontWeight.w500,
                         height: 1.2175 * ffem / fem,
-                        color: Color(0xff818181),
+                        color: const Color(0xff818181),
                       ),
                     ),
                   ),
