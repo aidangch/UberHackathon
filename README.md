@@ -72,11 +72,9 @@ This error occurs when the app is unable to get the user's current location from
 
 ### No drivers available 
 
-This error pops up when the user tries to request a ride but there are no drivers available near the virtual bus stop. Some things to try:
+This error pops up when the user tries to request a ride but there are no drivers available near the virtual bus stop. This happens because we use a non pseudorandom generation to test the code. So sometimes theres no driver Some things to try:
 
-- Wait a few minutes and try again - driver supply fluctuates 
-- Adjust your pickup location if it's in a low coverage area
-- Select a larger vehicle type like UberXL to increase driver options
+- Run the program again - driver supply fluctuates
 
 ### API rate limit exceeded
 
