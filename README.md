@@ -1,5 +1,5 @@
 # UberHackathon
-Uber Hackathon Gavin Belson dream team
+BEFORE YOU GO ANY FURTHER, this is the wrong version of the code and im too lazy to update it so dont bother running it 
 # Uber Virtual Bus Stop
 
 This repo contains the code behind the Uber virtual bus stop project built for the Uber Global Hackathon 2023. 
